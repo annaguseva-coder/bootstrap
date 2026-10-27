@@ -1,0 +1,40 @@
+/* Центрируем содержимое внутри .modal-body и поднимаем его */
+#exampleModal .modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0.5rem !important;      /* меньше отступ сверху — форма выше */
+  padding-bottom: 0.5rem !important;  /* и снизу, чтобы не растягивало */
+}
+
+/* Поднимаем блок с формой (у тебя стоит класс mt-5) */
+#exampleModal .container .row.mt-5 {
+  margin-top: 0rem !important;        /* было ~3rem, теперь ~1rem — заметно выше */
+}
+
+/* Убираем влияние offset-4: задаём свою ширину и центрируем блоки */
+#exampleModal .col-2.offset-4,
+#exampleModal .col-8.offset-4 {
+  width: auto;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+}
+
+/* Сами поля ввода делаем компактными и по центру */
+#exampleModal input[type="text"],
+#exampleModal input[type="email"],
+#exampleModal input[type="button"] {
+  max-width: 280px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Чекбокс и его лейбл — в одну строку и по центру */
+#exampleModal .form-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+}

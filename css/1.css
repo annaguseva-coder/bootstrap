@@ -1,0 +1,10 @@
+.header{
+    background-color: plum;
+    min-height: 20vh;
+}
+.header-text{
+    text-align: center;
+}
+.content{
+background-color: palevioletred;
+}
